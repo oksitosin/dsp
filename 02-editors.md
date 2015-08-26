@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I tried both vim and nano. Both are fine but i prefer nano since it is more user-friendly.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Spyder and sublime are nice to use. I am fine with both. I tried some basic codes but sublime doesn’t support user input. I searched and found out that using SublimeREPL will solve that issue but unfortunately it didn’t work, i am not sure where exactly the problem is. Spyder doesn’t have any problem at all (so far) and I like the interface. Everything is clear and the panes are useful especially the variable explorer. On the other hand, the shortcut options are more handy and customization is more flexible on sublime text 2. 
 
 ---
