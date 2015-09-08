@@ -93,16 +93,21 @@ firstn = tuple(firstn)
 
 val=zip(firstn,lastn,degree,titles,email)
 
-faculty_dict = dict()
+professor_dict = dict()
 
 for line in val:
-    if line[0:2] in faculty_dict:
-        faculty_dict[line[0:2]].append(line[2:])
+    if line[0:2] in professor_dict:
+        professor_dict[line[0:2]].append(line[2:])
     else:
-        faculty_dict[line[0:2]] = [line[2:]]
+        professor_dict[line[0:2]] = [line[2:]]
 
-x = itertools.islice(faculty_dict.items(), 0, 3)
+x = itertools.islice(professor_dict.items(), 0, 3)
 
 for key, value in x:
     print key, value
     
+#Q8
+#In addition to Q7 code, the following will sort the dictionary by last name.
+
+pds = sorted(professor_dict.items(), key=lambda l: l[0][1])[:3]
+print pds
