@@ -50,14 +50,50 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+
+>> * T (twins)
+>> * D (identical twins) 
+>> * F (fraternal twins) 
+
+>> The conditional probability for identical twin brothers given that Elvis had a twin brother:              **P(D|T)**
+
+>> * P(T|F) = 1/2 x 1/2 = 1/4 
+>> * P(T|D) = 1/2
+>> * P(F) = 1/125 
+>> * P(D) = 1/300
+>> * P(D|T) = ?
+>> * P(T) = [(P(T|D)P(D)] + [P(T|F)P(F)]
+
+>> We can calculate the desired probability with Bayes’ rule:
+
+>> * P(D|T) = P(T|D)P(D) / P(T) = P(T|D)P(D) / [(P(T|D)P(D)] + [P(T|F)P(F)]
+
+>> * P(D|T) = 1/2 x 1/300 / [(1/2 x 1/300) + (1/4 x 1/125)] 
+
+>> * P(D|T) = 5/11 
 
 ---
 
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I found this [video](https://www.youtube.com/watch?v=r76oDIvwETI) useful in terms of the different approaches Bayesian and Frequentists have.
+
+>> This is also a clear example: ( [source](http://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english) ) 
+
+>> " I have misplaced my phone somewhere in the home. I can use the phone locator on the base of the instrument to locate the phone and when I press the phone locator the phone starts beeping.
+
+>> Problem: Which area of my home should I search?
+
+>> * Frequentist Reasoning:
+
+>> I can hear the phone beeping. I also have a mental model which helps me identify the area from which the sound is coming from. Therefore, upon hearing the beep, I infer the area of my home I must search to locate the phone.
+
+>> * Bayesian Reasoning:
+
+>> I can hear the phone beeping. Now, apart from a mental model which helps me identify the area from which the sound is coming from, I also know the locations where I have misplaced the phone in the past. So, I combine my inferences using the beeps and my prior information about the locations I have misplaced the phone in the past to identify an area I must search to locate the phone. "
+
+>> For Bayesians, prior knowledge is important.
 
 ---
 
